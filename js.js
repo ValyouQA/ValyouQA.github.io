@@ -1,7 +1,5 @@
-/* Это объявление переменной, мы наши кнопку по тегу */
 const button = document.querySelector('button');
 
-/* Тут на кнопку навешиваем обрабочик, который ждёт клика и тогда запустит логику */
 button.addEventListener('click', function() {
 var randomLoc = Math.floor(Math.random() * 5);
 var location1 = randomLoc;
@@ -13,7 +11,7 @@ var mistakes = 0;
 var isSunk = false;
 
 while(!isSunk) {
-	let guess = prompt("Введите число (0-6)", "");
+	let guess = prompt("Привет! Это мини игра морской бой :) Представь, что в 7 ячейках по горизонтали ••••••• (от нуля до шести) расположен 3-ёх палубный корабль врага. Твоя задача потопить его за меньшее кол-во попыток. Стреляй! (введи число 0-6):", "");
 	if (guess == null) {
 		alert("Жаль что вы покинули игру :(");
 		break;
